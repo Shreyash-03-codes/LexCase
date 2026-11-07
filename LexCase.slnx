@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/LexCase.Api/LexCase.Api.csproj" />
+    <Project Path="src/LexCase.Application/LexCase.Application.csproj" />
+    <Project Path="src/LexCase.Domain/LexCase.Domain.csproj" />
+    <Project Path="src/LexCase.Infrastructure/LexCase.Infrastructure.csproj" />
+  </Folder>
+</Solution>
