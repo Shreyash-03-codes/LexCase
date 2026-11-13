@@ -1,9 +1,10 @@
 namespace LexCase.Domain.Entities;
+using LexCase.Domain.Enums;
+
 public class User
 {
     public Guid Id{get; set;}
-    public DateTime CreatedAt=DateTime.UtcNow;
-
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public string Email{get; set;}="";
     public UserRole Role{get;set;}
     public string PasswordHash{get; set;}="";

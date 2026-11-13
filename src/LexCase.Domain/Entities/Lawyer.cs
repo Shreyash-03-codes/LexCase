@@ -12,9 +12,7 @@ public class Lawyer
 
     public User? User{get;set;}
 
-    public ICollection<Case> Cases{get;}=new Collection<Case>();
-
-    public ICollection<CaseLawyer> CaseLawyers{get;}=new Collection<CaseLawyer>();
+    public ICollection<CaseLawyer> CaseLawyers{get;}=[];
 
     
     

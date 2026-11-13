@@ -8,6 +8,11 @@ public class AppDbContext : DbContext
         
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+    }
+
     public DbSet<User> Users{get; set;}
     public DbSet<Client> Clients{get; set;}
     public DbSet<Lawyer> Lawyers{get; set;}

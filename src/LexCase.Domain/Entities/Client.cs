@@ -1,4 +1,6 @@
 using System.Collections.ObjectModel;
+using LexCase.Domain.Enums;
+
 
 namespace LexCase.Domain.Entities;
 public class Client
@@ -12,6 +14,6 @@ public class Client
 
     public User? User{get; set;}
 
-    public ICollection<Case> Cases{get;}=new Collection<Case>();
+    public ICollection<Case> Cases{get;}=[];
 
 }
